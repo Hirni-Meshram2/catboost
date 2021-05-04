@@ -38,14 +38,6 @@ matrix:
       dist: trusty
       arch: arm64
       language: python
-      python: 3.8
+      python: 3.6
       env: CB_BUILD_AGENT='python38-linux-aarch64-release'
-      script: ~/build/${TRAVIS_REPO_SLUG}/ci/travis/script.sh
-    - os: linux
-      dist: trusty
-      arch: arm64
-      language: python
-      python: 3.7
-      env: CB_BUILD_AGENT='python37-linux-aarch64-release'
-      script: ~/build/${TRAVIS_REPO_SLUG}/ci/travis/script.sh
-    
+      script: ~/build/${TRAVIS_REPO_SLUG}/ci/travis/script.sh 
