@@ -39,5 +39,5 @@ matrix:
       arch: arm64
       language: python
       python: 3.6
-      env: CB_BUILD_AGENT='python38-linux-aarch64-release'
+      env: CB_BUILD_AGENT='python36-linux-aarch64-release'
       script: ~/build/${TRAVIS_REPO_SLUG}/ci/travis/script.sh 
