@@ -7,7 +7,7 @@ fi
 function install_cuda_linux()
 {
     #sudo apt-get update
-    wget https://developer.download.nvidia.com/compute/cuda/11.3.0/local_installers/cuda-repo-ubuntu1804-11-3-local_11.3.0-465.19.01-1_arm64.deb -O cuda-repo-ubuntu1404-8-0-local-ga2_8.0.61-1_arm64.deb | sudo apt-key add /var/cuda-repo-ubuntu1804-11-3-local/7fa2af80.pub
+    wget https://developer.download.nvidia.com/compute/cuda/11.3.0/local_installers/cuda-repo-ubuntu1804-11-3-local_11.3.0-465.19.01-1_arm64.deb -O cuda-repo-ubuntu1404-8-0-local-ga2_8.0.61-1_arm64.deb | sudo apt-key add 6B05F25D762E3157
     sudo dpkg -i cuda-repo-ubuntu1404-8-0-local-ga2_8.0.61-1_arm64.deb
     sudo apt update
     sudo apt-get install cuda    
