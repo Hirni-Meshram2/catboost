@@ -36,20 +36,14 @@ matrix:
     - os: linux
       dist: trusty
       language: python
-      python: 2.7
-      env: CB_BUILD_AGENT='python2-linux-x86_64-release'
+      python: 3.8
+      env: CB_BUILD_AGENT='python38-linux-x86_64-release'
       script: ~/build/${TRAVIS_REPO_SLUG}/ci/travis/script.sh
     - os: linux
       dist: trusty
       language: python
-      python: 3.5
-      env: CB_BUILD_AGENT='python35-linux-x86_64-release'
-      script: ~/build/${TRAVIS_REPO_SLUG}/ci/travis/script.sh
-    - os: linux
-      dist: trusty
-      language: python
-      python: 3.4
-      env: CB_BUILD_AGENT='python34-linux-x86_64-release'
+      python: 3.7
+      env: CB_BUILD_AGENT='python37-linux-x86_64-release'
       script: ~/build/${TRAVIS_REPO_SLUG}/ci/travis/script.sh
     - os: linux
       dist: trusty
@@ -57,15 +51,26 @@ matrix:
       python: 3.6
       env: CB_BUILD_AGENT='python36-linux-x86_64-release'
       script: ~/build/${TRAVIS_REPO_SLUG}/ci/travis/script.sh
-    - os: osx
-      osx_image: xcode8.3
-      language: cpp
-      env: CB_BUILD_AGENT='clang-darwin-x86_64-release'
+    - os: linux
+      dist: trusty
+      arch: arm64
+      language: python
+      python: 3.8
+      env: CB_BUILD_AGENT='python38-linux-aarch64-release'
       script: ~/build/${TRAVIS_REPO_SLUG}/ci/travis/script.sh
-    - os: osx
-      osx_image: xcode8.3
-      language: cpp
-      env: CB_BUILD_AGENT='R-clang-darwin-x86_64-release'
+    - os: linux
+      dist: trusty
+      arch: arm64
+      language: python
+      python: 3.7
+      env: CB_BUILD_AGENT='python37-linux-aarch64-release'
+      script: ~/build/${TRAVIS_REPO_SLUG}/ci/travis/script.sh
+    - os: linux
+      dist: trusty
+      arch: arm64
+      language: python
+      python: 3.6
+      env: CB_BUILD_AGENT='python36-linux-aarch64-release'
       script: ~/build/${TRAVIS_REPO_SLUG}/ci/travis/script.sh
     - os: linux
       dist: trusty
