@@ -37,7 +37,7 @@ class PythonTrait(object):
 
     def gen_cmd(self):
         cmd = [
-            sys.executable, arc_root + '/ya', 'make', os.path.join(arc_root, 'catboost', 'python-package', 'catboost'),
+            sys.executable, arc_root + '/make', 'make', os.path.join(arc_root, 'catboost', 'python-package', 'catboost'),
             '--no-src-links', '-r', '--output', out_root, '-DPYTHON_CONFIG=' + self.py_config, '-DNO_DEBUGINFO', '-DOS_SDK=local',
         ]
 
